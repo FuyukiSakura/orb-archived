@@ -64,7 +64,7 @@ async def on_message(message):
             print("Unrecognised input detected:", message.content)
             await message.channel.send("Error: Command not recognised. Try " + PREFIX + "help")
 
-    # If message from Gordon, 1/500 chance of reacting "very cool"
+    # If message from a specific person, 1/500 chance of reacting "very cool"
     if message.author == "109139923247841280":
         if random.randrange(1, 500) == 1:
             await message.add_reaction("🇻")
