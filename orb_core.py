@@ -77,17 +77,5 @@ async def on_message(message):
             await message.add_reaction("🇱")
             print("Reacted 'very cool' to Gordon's message of", message.content)
 
-    # If message contains very cool, or otherwise a 1/2000 chance of reacting "very cool"
-    if "VERY COOL" in message.content.upper() or random.randrange(1, 2000) == 1:
-        await message.add_reaction("🇻")
-        await message.add_reaction("🇪")
-        await message.add_reaction("🇷")
-        await message.add_reaction("🇾")
-        await message.add_reaction("🇨")
-        await message.add_reaction("🇴")
-        await message.add_reaction("🅾")
-        await message.add_reaction("🇱")
-        print("Reacted 'very cool' to message", message.content, "from user", message.author.display_name)
-
 
 client.run("I'm not giving you my token >:P")
