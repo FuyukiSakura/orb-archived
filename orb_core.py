@@ -110,25 +110,5 @@ async def on_message(message):
             await message.add_reaction("🇨")
             print("Reacted 'epic' to the message", "'" + message.content + "'", "from user", message.author.display_name)
             
-    # # Girls aren't real
-    # if "GIRLS AREN'T REAL" or "GIRLS ARENT REAL" in message.content.upper():
-    #     await message.add_reaction("🇫")
-    #     await message.add_reaction("🇦")
-    #     await message.add_reaction("🇨")
-    #     await message.add_reaction("🇹")
-
-    # # Epic reaction time
-    # if "EPIC" in message.content.upper():
-    #     if random.randrange(1, 20) == 1:
-    #         await message.add_reaction("🇪")
-    #         await message.add_reaction("🅱️")
-    #         await message.add_reaction("🇮")
-    #         await message.add_reaction("🇨")
-    #     else:
-    #         await message.add_reaction("🇪")
-    #         await message.add_reaction("🇵")
-    #         await message.add_reaction("🇮")
-    #         await message.add_reaction("🇨")
-    
 
 client.run("nope")
