@@ -74,27 +74,41 @@ async def on_message(message):
         await message.add_reaction("🇴")
         await message.add_reaction("🅾")
         await message.add_reaction("🇱")
-        print("Reacted 'very cool' to message", message.content, "from user", message.author.display_name)
+        print("Reacted 'very cool' to message", "'" + message.content + "'", "from user", message.author.display_name)
     
-    # # Girls aren't real
-    # if "GIRLS AREN'T REAL" or "GIRLS ARENT REAL" in message.content.upper():
-    #     await message.add_reaction("🇫")
-    #     await message.add_reaction("🇦")
-    #     await message.add_reaction("🇨")
-    #     await message.add_reaction("🇹")
+    # Girls aren't real
+    elif "GIRLS AREN'T REAL" in message.content.upper() or "GIRLS ARENT REAL" in message.content.upper():
+        rand_int = random.randrange(1, 10)
+        if rand_int <= 3:
+            await message.add_reaction("🇹")
+            await message.add_reaction("🇷")
+            await message.add_reaction("🇺")
+            await message.add_reaction("🇪")
+            print("Reacted 'true' to the message", "'" + message.content + "'", "from user", message.author.display_name)
+        elif rand_int > 3 and rand_int <= 5:
+            print("Ignored", "'" + message.content + "'", "from user", message.author.display_name)
+            pass
+        else:
+            await message.add_reaction("🇫")
+            await message.add_reaction("🇦")
+            await message.add_reaction("🇨")
+            await message.add_reaction("🇹")
+            print("Reacted 'fact' to the message", "'" + message.content + "'", "from user", message.author.display_name)
 
-    # # Epic reaction time
-    # if "EPIC" in message.content.upper():
-    #     if random.randrange(1, 20) == 1:
-    #         await message.add_reaction("🇪")
-    #         await message.add_reaction("🅱️")
-    #         await message.add_reaction("🇮")
-    #         await message.add_reaction("🇨")
-    #     else:
-    #         await message.add_reaction("🇪")
-    #         await message.add_reaction("🇵")
-    #         await message.add_reaction("🇮")
-    #         await message.add_reaction("🇨")
-    
+    # Epic reaction time
+    elif "EPIC" in message.content.upper():
+        if random.randrange(1, 20) == 1:
+            await message.add_reaction("🇪")
+            await message.add_reaction("🅱")
+            await message.add_reaction("🇮")
+            await message.add_reaction("🇨")
+            print("Reacted 'ebic' to the message", "'" + message.content + "'", "from user", message.author.display_name)
+        else:
+            await message.add_reaction("🇪")
+            await message.add_reaction("🇵")
+            await message.add_reaction("🇮")
+            await message.add_reaction("🇨")
+            print("Reacted 'epic' to the message", "'" + message.content + "'", "from user", message.author.display_name)
+            
 
-client.run("I'm not giving you my token >:P")
+client.run("nope")
