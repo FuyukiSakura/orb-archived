@@ -111,4 +111,4 @@ async def on_message(message):
             print("Reacted 'epic' to the message", "'" + message.content + "'", "from user", message.author.display_name)
     
 
-client.run("NTc0MTIxODY3OTQyODIxODg4.XM6pTQ.n_82kfeWthBz2CzBaEqH7wuzvbw")
+client.run("nope")
