@@ -14,7 +14,12 @@ PREFIX = 'orb.'
 COMMANDS = [
     ("help", "Displays help blurb", "None"), 
     ("commands", "Lists all commands", "None"), 
-    ("ping", "Pings the bot, with various responses", "None")
+    ("ping", "Pings the bot, with various responses", "None"),
+    ("ban", "'Bans' the user named (hint: doesn't work)", "Any input"),
+    ("bully", "Bullies the user named", "Any input"),
+    ("rank", "Ranks something", "Any input"),
+    ("illya", "Posts illya", "None"),
+    ("bde", "ranks BDE", "Any input")
 ]
 MESSAGE = discord.Game("with orbs. Try orb.help")
 
